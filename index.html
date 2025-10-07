@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space War — Tecinfo</title>
+  <link rel="stylesheet" href="styles.css"> <!-- compile styles.scss -> styles.css -->
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Space War</h1>
+      <div class="hud">
+        <div>Pontos: <span id="score">0</span></div>
+        <div>Vidas: <span id="lives">3</span></div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="game" width="480" height="640" aria-label="Canvas do jogo Space War"></canvas>
+
+      <div class="controls">
+        <button id="start">Iniciar</button>
+        <button id="pause">Pausar</button>
+        <button id="restart">Reiniciar</button>
+        <label for="difficulty">Dificuldade</label>
+        <select id="difficulty">
+          <option value="1">Fácil</option>
+          <option value="1.5" selected>Médio</option>
+          <option value="2">Difícil</option>
+        </select>
+      </div>
+
+      <p class="hint">Use ← → ou A D para mover; Espaço para atirar.</p>
+    </main>
+
+    <footer>
+      <small>Tecinfo — Exemplo didático</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
